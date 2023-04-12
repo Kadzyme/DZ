@@ -1,0 +1,18 @@
+.header {
+  color: blue;
+  font-style: inherit;
+  font-size: 40px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#interactable {
+  background-color: chartreuse;
+  border: none;
+  cursor: pointer;
+}
