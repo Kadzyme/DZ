@@ -1,3 +1,7 @@
+body {
+  font-family: fantasy;
+}
+
 .header {
   color: blue;
   font-style: inherit;
@@ -15,4 +19,33 @@ a {
   background-color: chartreuse;
   border: none;
   cursor: pointer;
+}
+
+.link {
+  color: black;
+  font-size: 30px;
+}
+
+.link:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  border: 3px solid black;
+  border-radius: 8px;
+  margin: 20px;
+  /* margin == отступ со внешней стороны */
+  padding: 12px 20px;
+  /* padding == отступ с внутренней стороны */
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
