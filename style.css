@@ -1,51 +1,32 @@
-body {
-  font-family: fantasy;
+.container {
+  list-style-type: none;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  position: relative;
 }
 
-.header {
-  color: blue;
-  font-style: inherit;
-  font-size: 40px;
+.item {
+  width: 200px;
+  height: 200px;
+  position: absolute;
 }
 
-a {
-  color: green;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 700;
+.item:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: red;
 }
 
-#interactable {
-  background-color: chartreuse;
-  border: none;
-  cursor: pointer;
+.item:nth-child(2) {
+  top: 25%;
+  left: 25%;
+  background-color: blue;
+  z-index: 1;
 }
 
-.link {
-  color: black;
-  font-size: 30px;
-}
-
-.link:hover {
-  color: red;
-  cursor: pointer;
-}
-
-.btn {
-  background-color: transparent;
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  border: 3px solid black;
-  border-radius: 8px;
-  margin: 20px;
-  /* margin == отступ со внешней стороны */
-  padding: 12px 20px;
-  /* padding == отступ с внутренней стороны */
-}
-
-.btn:hover {
-  cursor: pointer;
-  background-color: black;
-  color: white;
+.item:nth-child(3) {
+  background-color: green;
+  bottom: 0;
+  right: 0;
 }
